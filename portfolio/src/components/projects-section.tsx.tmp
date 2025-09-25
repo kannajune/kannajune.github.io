@@ -3,70 +3,65 @@
 import { motion } from "framer-motion"
 import { ExternalLink } from "lucide-react"
 
-interface Project {
-  title: string
-  description: string
-  techStack: string[]
-  liveUrl?: string
-  year: string
-}
-
-const featuredProjects: Project[] = [
+const featuredProjects = [
   {
     title: "Wibely",
     description: "Consumer-facing entertainment discovery and recommendation platform with AI-powered personalization and social sharing features.",
+    image: "/project-images/wibely.png",
     techStack: ["Java", "React Native", "Node.js"],
     liveUrl: "https://wibely.com",
-    year: "2021"
+    year: "2024"
   },
   {
     title: "Five Element Organic",
     description: "Scalable e-commerce website & mobile app with product catalog, secure payments, and order management system.",
+    image: "/project-images/five-element.png",
     techStack: ["Laravel", "MySQL", "Node.js", "React Native"],
     liveUrl: "https://fiveelementorganic.com",
-    year: "2020"
+    year: "2023"
   },
   {
     title: "Vasantham Learning",
     description: "Comprehensive learning management system (LMS) with student enrollment, course management, and integrated payments.",
+    image: "/project-images/vasantham.png",
     techStack: ["Angular", "Laravel", "MySQL"],
     liveUrl: "https://vasanthamlearning.com",
-    year: "2022"
+    year: "2023"
   }
 ]
 
-const otherProjects: Project[] = [
+const otherProjects = [
   {
     title: "HipHop Tamizha",
     description: "Official artist website and mobile app featuring music streaming, event updates, and an online retail store.",
     techStack: ["Laravel", "MySQL", "React Native"],
     liveUrl: "https://hiphoptamizha.com",
-    year: "2024"
+    year: "2022"
   },
   {
     title: "Loan Management System",
     description: "Multi-tenant SaaS platform with authentication, subscription, and reporting modules for secure loan processing.",
     techStack: ["Node.js", "React", "PostgreSQL"],
-    year: "2016"
+    year: "2022"
   },
   {
     title: "AMS – Pipeline Project Management",
     description: "Project management system with employee attendance tracking and payroll management features.",
     techStack: ["Angular", "Laravel", "PostgreSQL", "AWS"],
     liveUrl: "https://amsprojects.in",
-    year: "2025"
+    year: "2021"
   },
   {
     title: "Transaction Screening Platform",
     description: "Scalable system handling 300k+ transactions daily with fraud detection workflows and real-time reporting.",
     techStack: ["Node.js", "React", "GraphQL", "Microservices"],
-    year: "2023"
+    year: "2021"
   },
   {
     title: "IoT Vending Machine Platform",
     description: "Complete IoT platform with admin dashboard for vending machine management and real-time monitoring.",
     techStack: ["Python", "FastAPI", "Angular", "MQTT", "C++"],
-    year: "2024"
+    year: "2020"
   }
 ]
 
@@ -110,19 +105,17 @@ export function ProjectsSection() {
                   </span>
                 </div>
                 {/* View Live Overlay */}
-                {project.liveUrl && (
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors flex items-center"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Live
-                    </a>
-                  </div>
-                )}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors flex items-center"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    View Live
+                  </a>
+                </div>
               </div>
 
               {/* Project Info */}

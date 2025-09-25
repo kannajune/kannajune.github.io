@@ -6,17 +6,17 @@ import { Heart, Github, Linkedin, Twitter } from "lucide-react"
 const socialLinks = [
   {
     icon: Github,
-    href: "https://github.com/yourusername",
+    href: "https://github.com/kannajune",
     label: "GitHub"
   },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://linkedin.com/in/kannajune",
     label: "LinkedIn"
   },
   {
     icon: Twitter,
-    href: "https://twitter.com/yourusername",
+    href: "https://x.com/kannajune",
     label: "Twitter"
   }
 ]
@@ -82,9 +82,9 @@ export function Footer() {
           >
             <h3 className="text-lg font-semibold">Get In Touch</h3>
             <div className="space-y-2 text-gray-400">
-              <p>your.email@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>kannajune@gmail.com</p>
+              <p>+91 954 393 0005</p>
+              <p>Bengaluru, India</p>
             </div>
             
             {/* Social Links */}

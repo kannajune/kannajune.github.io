@@ -54,6 +54,7 @@ const skillCategories = [
   },
   {
     title: "Frameworks & Libraries",
+    className: "mt-16",  // Add extra margin top for this section
     skills: [
       { name: "React", level: "Expert", icon: SiReact, color: "#61DAFB" },
       { name: "Angular", level: "Expert", icon: SiAngular, color: "#DD0031" },
@@ -187,7 +188,7 @@ export function SkillsSection() {
         </motion.div>
 
         {/* Primary Skills Categories */}
-        <div className="space-y-12">
+        <div className="space-y-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={categoryIndex}
@@ -195,13 +196,13 @@ export function SkillsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8"
+              className={`rounded-lg ${category.className || ''}`}
             >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-                {category.title}
-              </h3>
+              <h6 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 inline-flex items-center">
+                <span className="mr-2">{category.title}</span>
+              </h6>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skillIndex}
@@ -209,7 +210,7 @@ export function SkillsSection() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: skillIndex * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex flex-col items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:shadow-md transition-shadow"
+                    className="flex flex-col items-center p-3 bg-white dark:bg-gray-800 rounded-lg hover:shadow-sm transition-shadow border border-gray-100 dark:border-gray-700"
                   >
                     <div className="mb-2">
                       {typeof skill.icon === 'string' ? (
@@ -246,13 +247,13 @@ export function SkillsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8"
+              className="rounded-lg"
             >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-                {category.title}
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 inline-flex items-center">
+                <span className="mr-2">{category.title}</span>
               </h3>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skillIndex}
@@ -260,7 +261,7 @@ export function SkillsSection() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: skillIndex * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex flex-col items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-600"
+                    className="flex flex-col items-center p-3 bg-white dark:bg-gray-800 rounded-lg hover:shadow-sm transition-shadow border border-gray-100 dark:border-gray-700"
                   >
                     <div className="mb-2">
                       {typeof skill.icon === 'string' ? (
@@ -294,7 +295,7 @@ export function SkillsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-8"
+          className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg"
         >
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
