@@ -35,7 +35,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/kannan-dharmalingam",
+    href: "https://linkedin.com/in/kannajune",
     color: "hover:text-blue-600"
   },
   {
