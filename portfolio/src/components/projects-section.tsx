@@ -44,23 +44,11 @@ const otherProjects: Project[] = [
     year: "2024"
   },
   {
-    title: "Loan Management System",
-    description: "Multi-tenant SaaS platform with authentication, subscription, and reporting modules for secure loan processing.",
-    techStack: ["Node.js", "React", "PostgreSQL"],
-    year: "2016"
-  },
-  {
     title: "AMS – Pipeline Project Management",
     description: "Project management system with employee attendance tracking and payroll management features.",
     techStack: ["Angular", "Laravel", "PostgreSQL", "AWS"],
     liveUrl: "https://amsprojects.in",
     year: "2025"
-  },
-  {
-    title: "Transaction Screening Platform",
-    description: "Scalable system handling 300k+ transactions daily with fraud detection workflows and real-time reporting.",
-    techStack: ["Node.js", "React", "GraphQL", "Microservices"],
-    year: "2023"
   },
   {
     title: "IoT Vending Machine Platform",
