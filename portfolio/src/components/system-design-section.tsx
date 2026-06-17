@@ -141,16 +141,34 @@ const systemDesignAreas = [
 
 const majorProjects = [
   {
-    title: "AML System with Microservices",
-    stack: "Node.js, React, Docker, Kubernetes",
-    features: "Transaction screening, alert management, case manager solution",
+    title: "AI Performance-Marketing Platform",
+    stack: "Python, FastAPI, React, Microservices, Azure, AI/ML",
+    features: "Campaign analytics, AI-driven optimization, real-time reporting",
+    scale: "Real-time, high-volume analytics"
+  },
+  {
+    title: "AML / Transaction-Screening Platform",
+    stack: "Node.js, React, AWS, Microservices",
+    features: "Transaction screening, payment compliance, alert & case management",
     scale: "300,000+ daily transactions"
   },
   {
+    title: "Loan Origination System",
+    stack: ".NET, Angular, Node.js, Azure",
+    features: "Loan origination, underwriting workflow, document management",
+    scale: "Multi-tenant lending platform"
+  },
+  {
     title: "Debt-Collection SaaS Platform",
-    stack: "Node.js, React, Microservices",
-    features: "Debt collection management, user dashboard, reporting",
+    stack: ".NET, Angular, Node.js, Azure",
+    features: "Debt-collection management, dashboards, reporting",
     scale: "50,000+ active users"
+  },
+  {
+    title: "IoT Vending Machine Platform",
+    stack: "Python, FastAPI, Angular, MQTT, C++",
+    features: "Device management, real-time monitoring, admin dashboard",
+    scale: "Real-time edge-to-cloud telemetry"
   },
   {
     title: "College Management System",
@@ -163,12 +181,6 @@ const majorProjects = [
     stack: "Ruby on Rails, WebRTC",
     features: "Real-time streaming for medical conferences",
     scale: "Low latency, high availability"
-  },
-  {
-    title: "IoT Vending Machine Platform",
-    stack: "Python, FastAPI, Angular, MQTT, C++",
-    features: "Device management, real-time monitoring, admin dashboard",
-    scale: "Real-time edge-to-cloud telemetry"
   }
 ]
 
