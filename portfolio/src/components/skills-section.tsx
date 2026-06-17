@@ -13,29 +13,16 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiGraphql,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
   SiAmazonwebservices,
   SiKubernetes,
   SiDocker,
   SiTerraform,
-  SiJenkins,
   SiGrafana,
-  SiPrometheus,
   SiElasticsearch,
   SiApachekafka,
   SiMongodb,
   SiPostgresql,
-  SiMysql,
   SiRedis,
-  SiGit,
-  SiGithub,
-  SiGitlab,
-  SiLinux,
-  SiJira,
-  SiPostman,
-  SiJest,
   SiSonarqube
 } from "react-icons/si"
 
@@ -48,8 +35,8 @@ const skillCategories = [
       { name: "TypeScript", level: "Expert", icon: SiTypescript, color: "#3178C6" },
       { name: "Python", level: "Expert", icon: SiPython, color: "#3776AB" },
       { name: "Ruby", level: "Expert", icon: SiRuby, color: "#CC342D" },
-      { name: "C++", level: "Advanced", icon: SiCplusplus, color: "#00599C" },
-      { name: "C#", level: "Advanced", icon: SiDotnet, color: "#239120" }
+      { name: "C#", level: "Advanced", icon: SiDotnet, color: "#239120" },
+      { name: "C++", level: "Advanced", icon: SiCplusplus, color: "#00599C" }
     ]
   },
   {
@@ -58,51 +45,43 @@ const skillCategories = [
     skills: [
       { name: "React", level: "Expert", icon: SiReact, color: "#61DAFB" },
       { name: "Angular", level: "Expert", icon: SiAngular, color: "#DD0031" },
-      { name: "Ruby on Rails", level: "Expert", icon: "🚂" },
-      { name: "FastAPI", level: "Expert", icon: "⚡" },
-      { name: "React Native", level: "Expert", icon: SiReact, color: "#61DAFB" },
       { name: "Next.js", level: "Expert", icon: SiNextdotjs, color: "#000000" },
       { name: "Node.js", level: "Expert", icon: SiNodedotjs, color: "#339933" },
+      { name: "React Native", level: "Expert", icon: SiReact, color: "#61DAFB" },
+      { name: "FastAPI", level: "Expert", icon: "⚡" },
       { name: "Express.js", level: "Expert", icon: "🚀" },
-      { name: "GraphQL", level: "Expert", icon: SiGraphql, color: "#E10098" },
-      { name: "HTML5", level: "Expert", icon: SiHtml5, color: "#E34F26" },
-      { name: "CSS3", level: "Expert", icon: SiCss3, color: "#1572B6" },
-      { name: "Tailwind CSS", level: "Expert", icon: SiTailwindcss, color: "#06B6D4" }
+      { name: "Ruby on Rails", level: "Expert", icon: "🚂" },
+      { name: "GraphQL", level: "Expert", icon: SiGraphql, color: "#E10098" }
     ]
   },
   {
-    title: "Database Systems",
+    title: "Databases",
     skills: [
-      { name: "MongoDB", level: "Expert", icon: SiMongodb, color: "#47A248" },
       { name: "PostgreSQL", level: "Expert", icon: SiPostgresql, color: "#336791" },
-      { name: "MySQL", level: "Advanced", icon: SiMysql, color: "#4479A1" },
+      { name: "MongoDB", level: "Expert", icon: SiMongodb, color: "#47A248" },
       { name: "Redis", level: "Expert", icon: SiRedis, color: "#DC382D" },
-      { name: "Elasticsearch", level: "Advanced", icon: SiElasticsearch, color: "#005571" },
-      { name: "Milvus", level: "Expert", icon: "🧠" }
+      { name: "Elasticsearch", level: "Advanced", icon: SiElasticsearch, color: "#005571" }
     ]
   },
   {
     title: "Cloud & Infrastructure",
     skills: [
-      { name: "Azure", level: "Expert", icon: "☁️" },
       { name: "AWS", level: "Expert", icon: SiAmazonwebservices, color: "#FF9900" },
+      { name: "Azure", level: "Expert", icon: "☁️" },
       { name: "Kubernetes", level: "Expert", icon: SiKubernetes, color: "#326CE5" },
       { name: "Docker", level: "Expert", icon: SiDocker, color: "#2496ED" },
       { name: "Terraform", level: "Expert", icon: SiTerraform, color: "#7B42BC" },
-      { name: "Jenkins", level: "Expert", icon: SiJenkins, color: "#D33833" },
-      { name: "Grafana", level: "Expert", icon: SiGrafana, color: "#F46800" },
-      { name: "Prometheus", level: "Advanced", icon: SiPrometheus, color: "#E6522C" },
-      { name: "ELK Stack", level: "Advanced", icon: SiElasticsearch, color: "#005571" },
-      { name: "CI/CD", level: "Expert", icon: "🔄" }
+      { name: "CI/CD", level: "Expert", icon: "🔄" },
+      { name: "Observability", level: "Expert", icon: SiGrafana, color: "#F46800" }
     ]
   },
   {
-    title: "Data Engineering & ETL",
+    title: "Data Engineering",
     skills: [
       { name: "Apache Kafka", level: "Expert", icon: SiApachekafka, color: "#231F20" },
-      { name: "Prefect", level: "Expert", icon: "🌊" },
-      { name: "Azure Data Factory", level: "Expert", icon: "🏭" },
       { name: "Apache Airflow", level: "Expert", icon: "🌪️" },
+      { name: "Azure Data Factory", level: "Expert", icon: "🏭" },
+      { name: "Prefect", level: "Expert", icon: "🌊" },
       { name: "Flowable", level: "Expert", icon: "🔀" },
       { name: "n8n", level: "Expert", icon: "🔗" }
     ]
@@ -112,53 +91,42 @@ const skillCategories = [
 // Second row skills with more detailed layout
 const detailedSkillCategories = [
   {
-    title: "Development & Project Tools",
-    skills: [
-      { name: "Visual Studio", level: "Expert", icon: "💻" },
-      { name: "Visual Studio Code", level: "Expert", icon: "🔵" },
-      { name: "PyCharm", level: "Intermediate", icon: "🐍" },
-      { name: "Git", level: "Expert", icon: SiGit, color: "#F05032" },
-      { name: "GitHub", level: "Expert", icon: SiGithub, color: "#181717" },
-      { name: "GitLab", level: "Advanced", icon: SiGitlab, color: "#FC6D26" },
-      { name: "Linux", level: "Advanced", icon: SiLinux, color: "#FCC624" },
-      { name: "PowerShell", level: "Advanced", icon: "💙" },
-      { name: "Jira", level: "Expert", icon: SiJira, color: "#0052CC" },
-      { name: "Postman", level: "Expert", icon: SiPostman, color: "#FF6C37" }
-    ]
-  },
-  {
-    title: "Testing & Quality Assurance",
-    skills: [
-      { name: "TDD", level: "Expert", icon: "🔄" },
-      { name: "BDD", level: "Expert", icon: "📝" },
-      { name: "SonarQube", level: "Expert", icon: SiSonarqube, color: "#4E9BCD" },
-      { name: "Jest", level: "Expert", icon: SiJest, color: "#C21325" },
-      { name: "PEP8", level: "Expert", icon: SiPython, color: "#3776AB" },
-      { name: "Code Reviews", level: "Expert", icon: "👁️" },
-      { name: "VAPT Assessment", level: "Expert", icon: "🛡️" },
-      { name: "Security Testing", level: "Advanced", icon: "🔒" }
-    ]
-  },
-  {
     title: "AI & Generative AI",
     skills: [
       { name: "Generative AI", level: "Expert", icon: "🤖" },
       { name: "AI Agents", level: "Expert", icon: "🧠" },
-      { name: "Machine Learning", level: "Advanced", icon: "📊" },
       { name: "LLM Integration", level: "Expert", icon: "💬" },
+      { name: "RAG", level: "Expert", icon: "📚" },
+      { name: "LangChain", level: "Expert", icon: "🦜" },
+      { name: "LangGraph", level: "Expert", icon: "🕸️" },
+      { name: "MCP", level: "Expert", icon: "🔌" },
+      { name: "Prompt Engineering", level: "Expert", icon: "✍️" },
       { name: "Vector Databases", level: "Expert", icon: "🧮" },
       { name: "AI Orchestration", level: "Expert", icon: "🎼" }
     ]
   },
   {
-    title: "Methodologies",
+    title: "Machine Learning & Data Science",
     skills: [
-      { name: "Agile", level: "Expert", icon: "🏃" },
-      { name: "Scrum", level: "Expert", icon: "🏈" },
-      { name: "Kanban", level: "Expert", icon: "📋" },
+      { name: "Machine Learning", level: "Advanced", icon: "📊" },
+      { name: "XGBoost", level: "Advanced", icon: "🌲" },
+      { name: "scikit-learn", level: "Advanced", icon: "📈" },
+      { name: "Pandas & NumPy", level: "Advanced", icon: "🐼" },
+      { name: "Model Fine-tuning", level: "Advanced", icon: "🎛️" }
+    ]
+  },
+  {
+    title: "Engineering Leadership & Practices",
+    skills: [
+      { name: "System Architecture", level: "Expert", icon: "🏗️" },
+      { name: "Design Patterns & OOP", level: "Expert", icon: "🧩" },
+      { name: "Microservices", level: "Expert", icon: "🔗" },
+      { name: "Event-Driven Architecture", level: "Expert", icon: "⚡" },
       { name: "DevOps", level: "Expert", icon: "♾️" },
-      { name: "Microservices", level: "Expert", icon: "🧩" },
-      { name: "SOLID Principles", level: "Expert", icon: "🏗️" }
+      { name: "Agile & Scrum", level: "Expert", icon: "🏃" },
+      { name: "TDD / BDD", level: "Expert", icon: "🔄" },
+      { name: "Security & Compliance (VAPT)", level: "Expert", icon: "🛡️" },
+      { name: "Code Quality (SonarQube)", level: "Expert", icon: SiSonarqube, color: "#4E9BCD" }
     ]
   }
 ]
@@ -181,9 +149,9 @@ export function SkillsSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Comprehensive technical expertise spanning full-stack development, cloud infrastructure,
-            DevOps practices, and modern frameworks. 16+ years of hands-on experience with enterprise-grade
-            technologies and cutting-edge tools.
+            Technical depth spanning full-stack engineering, cloud architecture, scalable data
+            platforms, and applied AI. 16+ years delivering enterprise-grade systems and leading
+            engineering teams from architecture through production.
           </p>
         </motion.div>
 
