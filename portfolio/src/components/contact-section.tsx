@@ -48,7 +48,7 @@ const socialLinks = [
 
 // Free access key from https://web3forms.com (enter your email; the key is emailed
 // to you instantly). It is a public, client-side key by design — safe to commit.
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY"
+const WEB3FORMS_ACCESS_KEY = "86922e73-a460-4519-a66a-e3c446d48ebc"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
