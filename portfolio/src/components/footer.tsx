@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Heart, Github, Linkedin, Twitter } from "lucide-react"
+import { Github, Linkedin, Twitter } from "lucide-react"
 
 const socialLinks = [
   {
@@ -111,17 +111,11 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0"
+          className="pt-8 border-t border-gray-800 text-center"
         >
-          <div className="flex items-center text-gray-400">
-            <span>© {currentYear} Kannan Dharmalingam. Made with</span>
-            <Heart className="w-4 h-4 mx-1 text-red-500" />
-            <span>using Next.js & Tailwind CSS</span>
-          </div>
-          
-          <div className="text-gray-400 text-sm">
-            <span>Built with modern web technologies</span>
-          </div>
+          <span className="text-gray-400 text-sm">
+            © {currentYear} Kannan Dharmalingam. All rights reserved.
+          </span>
         </motion.div>
       </div>
     </footer>

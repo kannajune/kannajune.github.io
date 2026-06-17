@@ -1,19 +1,17 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { 
-  Server, 
-  Database, 
-  Shield, 
-  Zap, 
-  Cloud, 
-  GitBranch, 
-  Monitor, 
+import {
+  Server,
+  Database,
+  Shield,
+  Zap,
+  Cloud,
+  Cpu,
+  Monitor,
   MessageSquare,
-  Users,
-  BarChart3,
-  Lock,
-  Globe
+  Sparkles,
+  BarChart3
 } from "lucide-react"
 
 const systemDesignAreas = [
@@ -27,6 +25,17 @@ const systemDesignAreas = [
       "Built modular architecture for independent deployability"
     ],
     technologies: ["Node.js", "Docker", "Kubernetes", "Load Balancing"]
+  },
+  {
+    icon: Sparkles,
+    title: "AI & LLM Systems",
+    description: "Architecting production AI systems — agentic workflows, retrieval-augmented generation (RAG), and LLM integration into enterprise products.",
+    achievements: [
+      "Designed RAG pipelines with vector databases for grounded, context-aware responses",
+      "Built multi-agent orchestration for automated decision-support workflows",
+      "Integrated LLMs with guardrails, evaluation, and cost controls"
+    ],
+    technologies: ["LLM Integration", "RAG", "Vector DBs", "AI Agents", "LangGraph"]
   },
   {
     icon: Zap,
@@ -104,6 +113,17 @@ const systemDesignAreas = [
       "Built scalable college management system for 5,000+ admissions"
     ],
     technologies: ["SaaS Architecture", "High Scalability", "Load Management", "Performance Tuning"]
+  },
+  {
+    icon: Cpu,
+    title: "IoT & Edge Architecture",
+    description: "Designed end-to-end IoT platforms connecting edge devices to the cloud, with real-time telemetry, device management, and remote monitoring.",
+    achievements: [
+      "Built an IoT vending-machine platform with real-time device monitoring and control",
+      "Implemented MQTT-based messaging for low-latency edge-to-cloud communication",
+      "Integrated device firmware (C++) with a FastAPI cloud backend and admin dashboard"
+    ],
+    technologies: ["MQTT", "FastAPI", "C++", "Edge Computing"]
   }
 ]
 
@@ -131,6 +151,12 @@ const majorProjects = [
     stack: "Ruby on Rails, WebRTC",
     features: "Real-time streaming for medical conferences",
     scale: "Low latency, high availability"
+  },
+  {
+    title: "IoT Vending Machine Platform",
+    stack: "Python, FastAPI, Angular, MQTT, C++",
+    features: "Device management, real-time monitoring, admin dashboard",
+    scale: "Real-time edge-to-cloud telemetry"
   }
 ]
 
@@ -150,8 +176,9 @@ export function SystemDesignSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Comprehensive expertise in designing scalable, resilient, and high-performance systems 
-            that handle enterprise-level workloads and complex business requirements.
+            Comprehensive expertise designing scalable, resilient, high-performance systems —
+            from high-scale SaaS and event-driven microservices to real-time IoT and
+            production AI/LLM platforms.
           </p>
         </motion.div>
 
