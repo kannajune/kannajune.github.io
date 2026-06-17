@@ -11,6 +11,7 @@ import {
   Monitor,
   MessageSquare,
   Sparkles,
+  Workflow,
   BarChart3
 } from "lucide-react"
 
@@ -18,7 +19,7 @@ const systemDesignAreas = [
   {
     icon: Server,
     title: "Microservices Architecture",
-    description: "Led development of scalable applications (ENSource, FacctShield, Encredible, Performity) using Node.js and microservices architecture.",
+    description: "Led development of multiple enterprise platforms across banking AML/compliance, lending, debt collection, and performance marketing using Node.js and microservices architecture.",
     achievements: [
       "Implemented horizontal scaling with load balancing and sharding",
       "Managed high user loads ensuring system responsiveness",
@@ -29,13 +30,24 @@ const systemDesignAreas = [
   {
     icon: Sparkles,
     title: "AI & LLM Systems",
-    description: "Architecting production AI systems — agentic workflows, retrieval-augmented generation (RAG), and LLM integration into enterprise products.",
+    description: "Architecting production AI systems — retrieval-augmented generation (RAG), semantic search, and LLM integration into enterprise products.",
     achievements: [
       "Designed RAG pipelines with vector databases for grounded, context-aware responses",
-      "Built multi-agent orchestration for automated decision-support workflows",
-      "Integrated LLMs with guardrails, evaluation, and cost controls"
+      "Integrated LLMs via streaming APIs and structured outputs for reliable enterprise use",
+      "Implemented guardrails, evaluation, and cost/latency controls for production reliability"
     ],
-    technologies: ["LLM Integration", "RAG", "Vector DBs", "AI Agents", "LangGraph"]
+    technologies: ["LLM Integration", "RAG", "Vector DBs", "Semantic Search", "Prompt Engineering"]
+  },
+  {
+    icon: Workflow,
+    title: "Agentic Architecture",
+    description: "Designing autonomous, multi-agent AI systems that reason, plan, call tools, and collaborate to execute complex workflows end-to-end.",
+    achievements: [
+      "Architected multi-agent orchestration with planner–executor patterns and shared memory",
+      "Built tool-calling and MCP-based integrations connecting agents to enterprise systems",
+      "Engineered human-in-the-loop guardrails, tracing, and evaluation for reliable autonomy"
+    ],
+    technologies: ["LangGraph", "MCP", "Multi-Agent", "Tool Calling", "Agentic RAG"]
   },
   {
     icon: Zap,
@@ -108,7 +120,7 @@ const systemDesignAreas = [
     title: "High-Scale SaaS Applications",
     description: "Designed and architected enterprise SaaS platforms handling massive user loads and transaction volumes.",
     achievements: [
-      "ENCollect supports 50,000+ users for debt collection management",
+      "Enterprise debt-collection SaaS supporting 50,000+ users",
       "Transaction Screening handles 300,000+ daily transactions",
       "Built scalable college management system for 5,000+ admissions"
     ],
@@ -135,7 +147,7 @@ const majorProjects = [
     scale: "300,000+ daily transactions"
   },
   {
-    title: "ENCollect SaaS Platform",
+    title: "Debt-Collection SaaS Platform",
     stack: "Node.js, React, Microservices",
     features: "Debt collection management, user dashboard, reporting",
     scale: "50,000+ active users"
