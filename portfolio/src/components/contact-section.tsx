@@ -46,6 +46,10 @@ const socialLinks = [
   }
 ]
 
+// Free access key from https://web3forms.com (enter your email; the key is emailed
+// to you instantly). It is a public, client-side key by design — safe to commit.
+const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY"
+
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
@@ -64,12 +68,31 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000))
-      setSubmitStatus("success")
-      setFormData({ name: "", email: "", subject: "", message: "" })
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          from_name: "Portfolio Contact Form",
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      })
+
+      const data = await response.json()
+      if (data.success) {
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        setSubmitStatus("error")
+      }
     } catch {
       setSubmitStatus("error")
     } finally {
