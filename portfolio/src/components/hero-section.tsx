@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { ChevronDown, ExternalLink } from "lucide-react"
+import { ChevronDown, ExternalLink, ArrowRight } from "lucide-react"
 
 const codeSnippets = [
   {
@@ -18,7 +18,7 @@ const codeSnippets = [
 const cto: TechLeader = {
   name: 'Kannan Dharmalingam',
   title: 'Chief Technology Officer',
-  experience: 15,
+  experience: 16,
   specializations: [
     'Cloud-Native Architecture', 'Scalable Data Pipelines',
     'Distributed Systems', 'UI/UX Leadership',
@@ -54,7 +54,7 @@ export class CTOStrategy {
     code: `class TechnologyLeader:
     def __init__(self):
         self.role = "Chief Technology Officer"
-        self.experience_years = 15
+        self.experience_years = 16
         self.core_skills = [
             "React", "Angular", "Node.js", "Python",
             "Azure", "Kubernetes", "Data Pipelines",
@@ -163,9 +163,12 @@ export function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed"
             >
-              Transforming ideas into scalable digital products with over 15 years of
-              experience. Specializing in cloud-native architectures, data engineering,
-              and modern tech stacks. Ready to build something incredible together.
+              Hands-on technology leader with 16+ years building and scaling cloud-native
+              platforms, data pipelines, and engineering teams. I help startups and
+              growth-stage companies turn ambitious ideas into reliable, scalable products —
+              from architecture and delivery to the team that ships it. Whether you're
+              building from scratch, scaling what you have, or need a fractional CTO to steer
+              the technology — let's talk.
             </motion.p>
 
             {/* Stats */}
@@ -177,7 +180,7 @@ export function HeroSection() {
             >
               <div className="flex items-center">
                 <span className="text-yellow-500 mr-1">✨</span>
-                <span>15 Years Experience</span>
+                <span>16 Years Experience</span>
               </div>
               <span>•</span>
               <div>3 Certifications</div>
@@ -209,14 +212,15 @@ export function HeroSection() {
             >
               <button
                 onClick={scrollToContact}
-                className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline underline-offset-4 font-medium transition-colors duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                Let's Build Something Amazing
+                Let's work together
+                <ArrowRight size={18} />
               </button>
 
               <button
                 onClick={() => window.open('https://linkedin.com/in/kannajune', '_blank')}
-                className="inline-flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center w-12 h-12 border border-gray-300 dark:border-gray-600 hover:border-blue-600 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-all duration-300"
                 title="LinkedIn Profile"
               >
                 <ExternalLink size={18} />

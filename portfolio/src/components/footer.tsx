@@ -40,7 +40,7 @@ export function Footer() {
               &lt;Kannan /&gt;
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Chief Technology Officer with 15+ years of experience in cloud-native architectures,
+              Chief Technology Officer with 16+ years of experience in cloud-native architectures,
               scalable systems, and technology leadership.
             </p>
           </motion.div>

@@ -60,7 +60,7 @@ const experiences = [
       "Implemented performance testing frameworks using JMeter, ensuring optimal application performance across web and mobile platforms",
       "Integrated Twilio video calling capabilities into applications, enhancing real-time communication features for end users",
       "Implemented enterprise-grade security including VAPT fixes, vulnerability assessments, and Diffie-Hellman algorithm for client authentication",
-      "Executed POCs using Node.js full-stack development and Azure Funtion Apps, demonstrating reduced infrastructure costs and enhanced scalability",
+      "Executed POCs using Node.js full-stack development and Azure Function Apps, demonstrating reduced infrastructure costs and enhanced scalability",
       "Served as SPOC for front-end development and mobile applications, delivering cohesive strategies for high-quality product development in the financial sector",
       "Received multiple performance awards for leading complex projects, driving architectural excellence, and delivering innovative solutions across industries"
     ],

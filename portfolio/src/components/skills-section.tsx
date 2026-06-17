@@ -182,7 +182,7 @@ export function SkillsSection() {
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Comprehensive technical expertise spanning full-stack development, cloud infrastructure,
-            DevOps practices, and modern frameworks. 15+ years of hands-on experience with enterprise-grade
+            DevOps practices, and modern frameworks. 16+ years of hands-on experience with enterprise-grade
             technologies and cutting-edge tools.
           </p>
         </motion.div>

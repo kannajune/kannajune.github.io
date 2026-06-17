@@ -66,7 +66,7 @@ export function AboutSection() {
               className="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed"
             >
               <p>
-                Technology leader and architect with 15+ years of experience driving digital transformation and
+                Technology leader and architect with 16+ years of experience driving digital transformation and
                 product innovation across enterprise-scale platforms. I specialize in designing cloud-native
                 architectures, leading cross-functional teams, and delivering strategic technology solutions that
                 fuel business growth and operational excellence.

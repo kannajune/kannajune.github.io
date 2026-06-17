@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Kannan Dharmalingam - Chief Technology Officer & Technology Leader",
-  description: "Hands-on technology leader with 15+ years of experience, specializing in UI and cloud-native architectures, scalable data pipelines, and distributed systems. AWS certified CTO driving digital transformation.",
+  description: "Hands-on technology leader with 16+ years of experience, specializing in UI and cloud-native architectures, scalable data pipelines, and distributed systems. AWS certified CTO driving digital transformation.",
   keywords: ["CTO", "Chief Technology Officer", "technology leader", "cloud architecture", "react", "angular", "node.js", "python", "azure", "kubernetes", "AWS certified", "system design", "team leadership"],
   authors: [{ name: "Kannan Dharmalingam" }],
   creator: "Kannan Dharmalingam",
