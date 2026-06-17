@@ -59,6 +59,8 @@ export function ContactSection() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+  // Honeypot: hidden from humans; if a bot fills it, we drop the submission.
+  const [botcheck, setBotcheck] = useState("")
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -68,6 +70,15 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+
+    // Honeypot tripped — silently treat as success without sending.
+    if (botcheck) {
+      setIsSubmitting(false)
+      setSubmitStatus("success")
+      setFormData({ name: "", email: "", subject: "", message: "" })
+      setTimeout(() => setSubmitStatus("idle"), 5000)
+      return
+    }
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -79,6 +90,7 @@ export function ContactSection() {
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
           from_name: "Portfolio Contact Form",
+          botcheck,
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
@@ -203,6 +215,18 @@ export function ContactSection() {
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot field — hidden from real users, catches bots */}
+              <input
+                type="text"
+                name="botcheck"
+                value={botcheck}
+                onChange={(e) => setBotcheck(e.target.value)}
+                className="hidden"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+              />
+
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
