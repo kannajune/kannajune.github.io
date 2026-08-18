@@ -153,7 +153,7 @@ export function HeroSection() {
                 transition={{ delay: 0.4 }}
                 className="text-xl sm:text-2xl font-semibold text-gray-700 dark:text-gray-300"
               >
-                Fractional CTO & Cloud Solutions Architect
+                Hands-on Engineering Leader — Enterprise AI Delivery & Team Building
               </motion.h2>
             </div>
 
@@ -163,12 +163,12 @@ export function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed"
             >
-              Hands-on technology leader with 16+ years building and scaling cloud-native
-              platforms, data pipelines, and engineering teams. I help startups and
-              growth-stage companies turn ambitious ideas into reliable, scalable products —
-              from architecture and delivery to the team that ships it. Whether you're
-              building from scratch, scaling what you have, or need a fractional CTO to steer
-              the technology — let's talk.
+              Hands-on engineering leader with 16+ years building and scaling cloud-native
+              platforms, AI systems, and the teams that ship them. At Sumeru I grew the web
+              and mobile engineering org from a single person to 35, appointing five tech
+              leads and owning hiring and compensation. Most of my delivery has been embedded
+              with enterprise BFSI customers across India, SEA, and ANZ — most recently
+              focused on production AI: LLM, RAG, and agentic systems.
             </motion.p>
 
             {/* Stats */}
@@ -180,7 +180,7 @@ export function HeroSection() {
             >
               <div className="flex items-center">
                 <span className="text-yellow-500 mr-1">✨</span>
-                <span>16 Years Experience</span>
+                <span>16+ Years Experience</span>
               </div>
               <span>•</span>
               <div>3 Certifications</div>
@@ -214,7 +214,7 @@ export function HeroSection() {
                 onClick={scrollToContact}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                Let's work together
+                Get in touch
                 <ArrowRight size={18} />
               </button>
 

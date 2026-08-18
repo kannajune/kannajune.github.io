@@ -80,9 +80,10 @@ export function AboutSection() {
               </p>
 
               <p>
-                Alongside my leadership role, I also provide consulting in <b>SaaS development, product strategy, and
-                software architecture </b> — helping organizations design scalable platforms, accelerate delivery, and
-                make confident technology decisions.
+                A big part of my work is <b>building and leading the teams that ship</b> — I grew an engineering
+                organization from a single person to 35, appointed and managed five tech leads, and owned technical
+                hiring and compensation as it scaled. I lead from the front, staying hands-on in architecture, code
+                review, and production debugging.
               </p>
 
               <p>

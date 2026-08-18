@@ -124,12 +124,12 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Let's Work Together
+            Contact
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. 
-            Let's discuss how we can bring your ideas to life!
+            The best way to reach me is by email or LinkedIn. Happy to talk through the
+            work below.
           </p>
         </motion.div>
 

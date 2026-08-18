@@ -190,6 +190,7 @@ export function SkillsSection() {
                     <h4 className="text-xs font-medium text-gray-900 dark:text-white text-center mb-1">
                       {skill.name}
                     </h4>
+                    {/* Skill-level badges hidden for now — re-enable later.
                     <span className={`px-2 py-1 text-xs rounded-full font-medium ${
                       skill.level === 'Expert'
                         ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200'
@@ -199,6 +200,7 @@ export function SkillsSection() {
                     }`}>
                       {skill.level}
                     </span>
+                    */}
                   </motion.div>
                 ))}
               </div>
@@ -241,6 +243,7 @@ export function SkillsSection() {
                     <h4 className="text-xs font-medium text-gray-900 dark:text-white text-center mb-1">
                       {skill.name}
                     </h4>
+                    {/* Skill-level badges hidden for now — re-enable later.
                     <span className={`px-2 py-1 text-xs rounded-full font-medium ${
                       skill.level === 'Expert'
                         ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200'
@@ -250,6 +253,7 @@ export function SkillsSection() {
                     }`}>
                       {skill.level}
                     </span>
+                    */}
                   </motion.div>
                 ))}
               </div>
@@ -277,7 +281,7 @@ export function SkillsSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                15+
+                16+
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Years Experience
@@ -301,7 +305,7 @@ export function SkillsSection() {
             </div>
             <div>
               <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">
-                50+
+                35
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Team Members Led

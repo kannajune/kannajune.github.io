@@ -16,20 +16,18 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kannajune.github.io"),
-  title: "Kannan Dharmalingam — Fractional CTO, Cloud & AI Solutions Architect",
+  title: "Kannan Dharmalingam — Hands-on Engineering Leader, Enterprise AI Delivery & Team Building",
   description:
-    "Fractional CTO and Cloud Solutions Architect with 16+ years building scalable platforms, agentic AI systems, IoT, and data engineering. Available for fractional CTO, technology consulting, and software architecture advisory.",
+    "Hands-on engineering leader with 16+ years building and scaling cloud-native platforms, agentic AI systems, and the teams that ship them. Enterprise AI delivery, team building, and software architecture.",
   keywords: [
-    "Fractional CTO",
-    "CTO for Hire",
-    "Interim CTO",
-    "Startup CTO",
-    "Technical Advisor",
-    "Technical Co-founder",
-    "CTO Consulting",
-    "Technology Consultant",
-    "Software Architecture Consulting",
-    "Freelance CTO",
+    "Engineering Leader",
+    "Head of Engineering",
+    "VP Engineering",
+    "Director of Engineering",
+    "Engineering Manager",
+    "Team Building",
+    "Enterprise AI Delivery",
+    "Chief Technology Officer",
     "Cloud Solutions Architect",
     "AWS Certified Solutions Architect",
     "AWS DevOps Engineer",
@@ -70,15 +68,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://kannajune.github.io",
     siteName: "Kannan Dharmalingam",
-    title: "Kannan Dharmalingam — Fractional CTO, Cloud & AI Solutions Architect",
+    title: "Kannan Dharmalingam — Hands-on Engineering Leader, Enterprise AI Delivery & Team Building",
     description:
-      "16+ years building scalable platforms, agentic AI systems, IoT, and data engineering. Available for fractional CTO, technology consulting, and architecture advisory.",
+      "16+ years building and scaling cloud-native platforms, agentic AI systems, and the teams that ship them. Enterprise AI delivery and team building.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kannan Dharmalingam — Fractional CTO & Cloud/AI Solutions Architect",
+    title: "Kannan Dharmalingam — Hands-on Engineering Leader, Enterprise AI & Team Building",
     description:
-      "16+ years building scalable platforms, agentic AI, IoT, and data engineering. Fractional CTO, consulting & architecture advisory.",
+      "16+ years building and scaling cloud-native platforms, agentic AI systems, and the teams that ship them. Enterprise AI delivery and team building.",
     creator: "@kannajune",
   },
 };
